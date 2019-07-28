@@ -1,0 +1,12 @@
+﻿@page
+@model TestAsync.Pages.CustomerModel
+@{
+    ViewData["Title"] = "Customer";
+}
+
+<h1>Customer: @Model.currentCustomer?.Name </h1>
+
+<form method="post">
+    <input type="text" name="name" required/>
+    <input type="submit" name="save" value="Save" />
+</form>
